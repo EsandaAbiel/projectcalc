@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* basic css reset */
+
+body {
+    display: grid;
+    grid-template: repeat(36, 1fr) / repeat(12, 1fr);
+}
+
+/* Setup Grid Layout */
+
+
+/* ============================== Start of Header Styling ============================== */
+
+header {
+    grid-row: span 5;
+    grid-column: span 12;
+    background-color: #36404f;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+}
+
+nav>section {
+    flex-grow: 2;
+    display: flex;
+}
+
+nav section a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+section.logo {
+    flex-grow: 1;
+    padding-left: 20px;
+}
+
+section.logo a {
+    padding: 0.5em;
+    text-align: left;
+    font-size: 1.7rem;
+    font-weight: 200;
+    width: 60%;
+    align-self: center;
+    letter-spacing: 5px;
+}
+
+section.howButton {
+    text-align: right;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+}
+
+section.howButton a {
+    padding: 1em;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+/* ============================== End of Header Styling ============================== */
+
+
+/* ============================== Start of Main Styling ============================== */
+
+/* ============================== End of Main Styling ============================== */
+
+
+/* ============================== Start of Footer Styling ============================== */
+
+footer {
+    grid-row: 34/37;
+    grid-column: span 12;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background-color: #36404f;
+    padding-left: 20px;
+}
+
+footer p {
+    font-weight: 200;
+    letter-spacing: 4px;
+    color: white;
+}
